@@ -2,7 +2,19 @@ programmming_dictionary = {
     "Bug": "This is bug section.",
     "Function": "This is function section."
 }
-print(programmming_dictionary)
+
+#Print dictionary key into the list
+print("Dictionary keys is: ",list(programmming_dictionary.keys()))
+
+#Print dictionary value into the list
+print("Dictionary values is: ",list(programmming_dictionary.values()))
+
+#returns the value of specified key
+print("Specified value: ",programmming_dictionary.get("Bug"))
+
+#Update the dictionary
+programmming_dictionary.update({"Error":"This is error"})
+print("Updated dictionary: ",programmming_dictionary)
 
 #Adding new items to dictionary
 programmming_dictionary["Loop"] = "This is loop section."
