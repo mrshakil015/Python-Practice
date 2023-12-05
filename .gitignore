@@ -1,0 +1,11 @@
+# Ignore audio files
+*.mp3
+*.wav
+*.ogg
+# Add more audio formats if needed
+
+# Ignore video files
+*.mp4
+*.avi
+*.mkv
+# Add more video formats if needed
