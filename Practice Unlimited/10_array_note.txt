@@ -1,0 +1,8 @@
+#Adding elements of an array
+    append()- used to add a single element at the end of an array
+    extend()- used to add more than one element at the end of an array
+    insert()- used to add an elememt at a specific position in an array
+#Removing elements of an array
+    pop()- used to remove element and return it.
+    remove()- used to remove an elememt with a specific value without returning it.
+    

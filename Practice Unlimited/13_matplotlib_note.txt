@@ -1,0 +1,14 @@
+#Header File
+    from mathplotlib import pyplot as plt
+    from matplotlib import style
+
+Function-->
+    plt.plot() - set the graph value
+    plt.title() - Set graph title
+    plt.ylabel() - set y-axis name
+    plt.xlabel() - set x-axis name
+    plt.show() - for show  the graph
+    plt.legend() - area describing the elements of the graph
+    plt.grid(True, color='k') - used for visual the grid line
+    plt.plot(variable1,variable2,'colorCode',label='labelname', linewidth=5) - for style the graph line
+    plt.bar([variable1],[variable2], label="labelname",color='colorCode') - creat the bar graph

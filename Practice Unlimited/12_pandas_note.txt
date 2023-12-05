@@ -1,0 +1,49 @@
+#Pandas has two types of data structures:
+    =>Series- it is one dimensional array, it capable of holding any type of data
+    =>Dataframe- it is two dimensional array,it structure with columns of potentially different types of data
+
+
+#Pandas Function-->
+        pd.DataFrame(dictionaryname) - convert to the data frame
+        variablename.to_csv('filename.csv') - convert dictionary to CSV file
+        variablename.to_csv('filename.csv',index=False) - convert dictionary to CSV file without index
+        variablename.head(value) - show the first some rows
+        variablename.tail(value) - show the last some rows
+        variablename.describe() - describe the numerical columns from the data frame
+        pd.read_csv('filename.csv') - import or read the csv file
+        dataframeName['ColumnName']) - show the specific column from dataframe
+        dataframeName.index =[a,b,c.....] - for changing the index name
+        pd.DataFrame(np.random.rand(no of rows,no of columns), index=np.arange(no of rows))
+        dataframeName.T - Transpose the data frame
+        dataframeName.sort_index(axis=0, ascending=False) - row wise sort the dataframe
+        dataframeName.copy() - duplicate the dataframe
+        dataframeName.loc[[rowName],[ColumnName]]- show the specific row and column value
+        dataframeName.loc[[rowName],:]- show the specific row and  all columns or all rows and specific column
+        dataframeName.loc[rowName,ColumnName] = setValue - set the value to the specific index
+        dataframeName.loc[(dataframeName[ColumnName]==value)] - filter the dataframe
+        dataframeName.iloc[index]- show the index value
+        dataframeName.drop([ColumnName],axis=1)- for drop the column
+        dataframeName.drop([rowName],axis=1)- for drop the row
+        dataframeName.drop([ColumnName], axis=1,inplace=True)- parmanent delete the column
+        dataframeName.drop([RowName], axis=0,inplace=True)- parmanent delete the row
+        dataframeName.reset_index(drop=True)- To reset index number after deleting an index number
+        dataframeName.dropna()- drop the null value
+        dataframeName.drop_duplicates(subset=['Roll NO']) - Drop the duplicates value & keep single one
+        dataframeName.drop_duplicates(subset=['Roll NO'],keep='first') - Drop the duplicates value & keep first duplicates value
+        dataframeName.drop_duplicates(subset=['Roll NO'],keep='last') - Drop the duplicates value & keep last duplicates value
+        dataframeName.drop_duplicates(subset=['Roll NO'],keep=False) - Drop the duplicates all values
+        dataframeName.notnull()
+        dataframeName.isnull()
+        dataframeName.shape
+        dataframeName.info()
+        pd.read_excel('filename.xlsx') - read the excel sheet
+        pd.read_excel('filename.xlsx', sheet_name= 'SheetName') - read the specific excel sheet value
+        dataframeName.iloc[index].values - used for convert array
+
+
+
+*Create a dataframe which contains only intergers with 3 rows and 2 columns
+    df.describe(), df.mean(), df.corr()
+    df.count(), df.max(), df.min()
+    df.median(),df.std()
+

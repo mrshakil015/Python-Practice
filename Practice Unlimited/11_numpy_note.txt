@@ -1,0 +1,27 @@
+    arrayname.ndim- used to find the array dimension
+    arrayname.reshape()- used for change the array dimension.
+    arrayname.copy()- used for copy array
+    arrayname.max() - find the maximum number
+    arrayname.min() - find minimum number
+    arrayname.sum()- full array summation
+    arrayname.sum(axis=0)- column wise summmation of array
+    arrayname.sum(axis=1)- Row wise summmation of array
+    np.sqrt(arrayname) - used for square root of array
+    np.arange()
+    np.searchsorted(arrayname, value)- find the index
+    np.where(arrayname == value) - Find the indexe
+    np.where(arrayname%2 == 0) - Find the indexes where the values are even
+    np.where(arrayname%2 == 1) - Find the indexes where the values are odd
+    arrayname.argmax() - find the maximum value index of array
+    arrayname.argmin() - find the minimum value index of array
+
+#Iterate on the elements of the 1-D array
+    for y in array4:
+            print(y)
+#Iterate on the elements of the 2-D array
+    for x in array3:
+        for y in x:
+            print(y)
+
+
+
