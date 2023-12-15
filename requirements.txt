@@ -1,1 +1,2 @@
 replit==3.3.2
+prettytable == 3.9.0
