@@ -9,3 +9,4 @@
 *.avi
 *.mkv
 # Add more video formats if needed
+env/
