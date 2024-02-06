@@ -330,6 +330,7 @@ for el in range(1,5,2):
 ```
 
 #### **Pass Statement:**
+---
 "pass" is a null statement that does nothing. It is used as a placeholder for future code.
 
 ```python
@@ -337,4 +338,30 @@ for el in range(1,5,2):
 for el in range(10):
   pass
 ```
+</details>
+
+<details>
+<summary><b>Functions in Python</b></summary>
+A function is a block of reusable code that performs a specific task. Functions help in organizing code, making it more modular, readable, and easier to maintain.
+
+```python
+#Syntax
+def func_name(param1, param2..):
+  #some work
+  return val
+
+func_name(arg1, arg2) #function call
+```
+```python
+myList = [2,3,4,5]
+def myFunction(myList):
+    for item in myList:
+        print(item, end=" ")
+myFunction(myList)
+```
+
+Mainly there are two types of function in python:
++ <b>Built-in Functions:</b> These are functions that are built into the Python language and are always available for use without the need to import any module. Examples include <code>print(), len(), range(), type(), sum(),</code> etc.
++ <b>User defined Functions: </b>These are functions defined by the user to perform specific tasks. You define them using the <code> def</code> keyword followed by the function name and parameters. These are the functions you create yourself to modularize your code and make it more readable and reusable.
+
 </details>
