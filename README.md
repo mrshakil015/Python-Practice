@@ -364,4 +364,9 @@ Mainly there are two types of function in python:
 + <b>Built-in Functions:</b> These are functions that are built into the Python language and are always available for use without the need to import any module. Examples include <code>print(), len(), range(), type(), sum(),</code> etc.
 + <b>User defined Functions: </b>These are functions defined by the user to perform specific tasks. You define them using the <code> def</code> keyword followed by the function name and parameters. These are the functions you create yourself to modularize your code and make it more readable and reusable.
 
+### <b>Recursion</b>
+---
+Recursion in Python refers to the process in which a function calls itself directly or indirectly to solve a problem. Here a function calls itself repeatedly.
+
+
 </details>
