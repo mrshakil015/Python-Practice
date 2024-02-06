@@ -1,83 +1,4 @@
 # 100-Days-of-Pyhon
-<details>
-<summary><b>List & Tuple in Python</b></summary>
-
-### **Lists in Python**
----
-A build-in data type that stores set of values. it can store elements of different types (integer, float, string, etc.).
-</details>
-
-<details>
-<summary><b>Dictionary & Set in Python</b></summary>
-
-### **Set in Python:**
----
-Set is the collection of unordered items. Sets are mutable. But each element in the set must be unique & immutable. Set always ignore the duplicate items. Acceptable value of set:
-+ boolean
-+ int
-+ float
-+ str
-+ tuple
-
-**Note:** Set doesn't support list and dict. Beacuase list and dict are mutable. Set doesn't return error for duplicate items.
-```python
-#Syntax
-mySet = {1,2,3,4,"Hello"}
-```
-```python
-#create empty set
-mySet = set()
-```
-#### **Set Methods:**
----
-+ <code>set.add(el):</code> This method used to adds an element of the set.
-  ```python
-  #Create empty set
-  mySet = set()
-
-  #Add element into the set
-  mySet.add("Python")
-  mySet.add(121)
-
-  #print set
-  print(mySet)
-  ```
-+ <code>set.remove(el):</code> This method to remove a specific element.
-  ```python
-  mySet = {"Python","JavaScript",99,"Java"}
-  mySet.remove("Python")
-  print(mySet)
-  ```
-+ <code>set.clear():</code> This method used to removes all elements from the set.
-  ```python
-  mySet = {"Python","JavaScript",99,"Java"}
-  mySet.clear()
-  print(mySet)
-  ```
-+ <code>set.update(el):</code> This method to add multiple elements (iterable) to the set.
-  ```python
-  mySet = {"Python","JavaScript",99,"Java"}
-  mySet.update([7, 8, 9])
-  print(mySet)
-  ```
-+ <code>set.pop():</code> This method used to removes a random value.
-  ```python
-  mySet = {"Python","JavaScript",99,"Java"}
-  print(mySet.pop())
-  ```
-+ <code>set.union(set2):</code> This method is used to perform the combines of two or more sets. The method returns a new set containing all unique elements from the sets involved.
-  ```python
-  mySet = {"Python","JavaScript",99}
-  mySet2 = {7,8,"Java"}
-  print(mySet.union(mySet2))
-  ```
-+ <code>set.intersection(set2):</code> This method is used to combines the common values of two or more sets.
-  ```python
-  mySet = {"Python","JavaScript",99}
-  mySet2 = {7,99,"Python"}
-  print(mySet.intersection(mySet2))
-  ```
-</details>
 
 <details>
   <summary><b> Python Random Module</b></summary>
@@ -183,6 +104,10 @@ The <strong>random</strong> module provides the following functions:
 + 
 </details>
 
+<details>
+<summary><b>Important Links:</b></summary>
+
+
 Here are some FREE resources that can help you learn end-to-end Python :
 
 - 🎓 Learn Python: https://lnkd.in/eb4ke-9P
@@ -204,3 +129,158 @@ Here are some FREE resources that can help you learn end-to-end Python :
 - 🌟 GIT & GitHub: https://lnkd.in/ejshTxFw
 - 🎨 Python Portfolio on Github: https://lnkd.in/eB2AanXj
 - 📄 Python Resume Ideas: https://lnkd.in/e_Fb7uNi
+
+</details>
+
+<details>
+<summary><b>List & Tuple in Python</b></summary>
+
+### **Lists in Python**
+---
+A build-in data type that stores set of values. it can store elements of different types (integer, float, string, etc.).
+</details>
+
+<details>
+<summary><b>Dictionary & Set in Python</b></summary>
+
+### **Set in Python:**
+---
+Set is the collection of unordered items. Sets are mutable. But each element in the set must be unique & immutable. Set always ignore the duplicate items. Acceptable value of set:
++ boolean
++ int
++ float
++ str
++ tuple
+
+**Note:** Set doesn't support list and dict. Beacuase list and dict are mutable. Set doesn't return error for duplicate items.
+```python
+#Syntax
+mySet = {1,2,3,4,"Hello"}
+```
+```python
+#create empty set
+mySet = set()
+```
+#### **Set Methods:**
+---
++ <code>set.add(el):</code> This method used to adds an element of the set.
+  ```python
+  #Create empty set
+  mySet = set()
+
+  #Add element into the set
+  mySet.add("Python")
+  mySet.add(121)
+
+  #print set
+  print(mySet)
+  ```
++ <code>set.remove(el):</code> This method to remove a specific element.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  mySet.remove("Python")
+  print(mySet)
+  ```
++ <code>set.clear():</code> This method used to removes all elements from the set.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  mySet.clear()
+  print(mySet)
+  ```
++ <code>set.update(el):</code> This method to add multiple elements (iterable) to the set.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  mySet.update([7, 8, 9])
+  print(mySet)
+  ```
++ <code>set.pop():</code> This method used to removes a random value.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  print(mySet.pop())
+  ```
++ <code>set.union(set2):</code> This method is used to perform the combines of two or more sets. The method returns a new set containing all unique elements from the sets involved.
+  ```python
+  mySet = {"Python","JavaScript",99}
+  mySet2 = {7,8,"Java"}
+  print(mySet.union(mySet2))
+  ```
++ <code>set.intersection(set2):</code> This method is used to combines the common values of two or more sets.
+  ```python
+  mySet = {"Python","JavaScript",99}
+  mySet2 = {7,99,"Python"}
+  print(mySet.intersection(mySet2))
+  ```
+</details>
+
+<details>
+<summary><b>Loops in Python</b></summary>
+
+### **While Loop:**
+---
+
+In Python, a while loop is used to repeatedly execute a block of code as long as a specified condition is true.
+
+```python
+#Syntax
+while condition:
+  #some code
+```
+
+```python
+#Example
+count = 1
+while count<=5:
+  print(count)
+  count+=1
+
+#Print from list
+myList = ["ironman","spiderman","superman","batman"]
+idx=0
+while idx < len(myList):
+  print(myList[idx])
+  idx+=1
+```
+
+**Search for a number from tuple using loop:**
+
+```python
+  myTuple = (10,2,9,16,25)
+
+  src=16
+  i=0
+  while i < (len(myTuple)):
+    if myTuple[i]  == src:
+      print("Search value present in index: ",i)
+    i+=1
+```
+#### **Break & Continue:**
+---
+**<code>Break:</code>** It is used to terminate the loop when encountered.
+
+```python
+  myTuple = (10,2,9,16,25)
+
+  src=16
+  i=0
+  while i < (len(myTuple)):
+    if myTuple[i]  == src:
+      print("Search value present in index: ",i)
+      break
+    i+=1
+print("End of the loop")
+```
+
+**<code>Continue:</code>** It is used to terminates execution in the current iteration & continues execution of the loop with the next iteration.
+
+```python
+i = 1
+while i<=5:
+    if(i==3):
+        i+=1
+        continue
+    print(i)
+    i+=1
+print("End of the loop")
+```
+
+</details>
