@@ -282,5 +282,59 @@ while i<=5:
     i+=1
 print("End of the loop")
 ```
+### **For Loop:**
+---
+"For Loop" used for sequential traversal. For traversing list, string, tuples etc.
 
+**Syntax:**
+```python
+for variable in iterable:
+  #some work
+
+
+#for loop with else:
+for variable in iterable:
+  #some work
+else:
+  #work when loop ends
+```
+**Example:**
+```python
+myList = [10,20,30,40]
+for ele in myList:
+  print(ele)
+```
+```python
+myList = [10,20,30,40]
+for ele in myList:
+  print(ele)
+else:
+  print("End loop")
+```
+
+#### **range():**
+---
+Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+```python
+range(start?,stop,step?)
+```
+```python
+for el in range(5):
+  print(el)
+
+for el in range(1,5):
+  print(el)
+
+for el in range(1,5,2):
+  print(el)
+```
+
+#### **Pass Statement:**
+"pass" is a null statement that does nothing. It is used as a placeholder for future code.
+
+```python
+#Syntax
+for el in range(10):
+  pass
+```
 </details>
