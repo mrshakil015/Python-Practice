@@ -29,7 +29,17 @@ print("Key is: ")
 for key in programmming_dictionary:
     print(key)
 
+print("All keys: ",programmming_dictionary.keys())
 #Print dictionary value using loop
 print("Value is: ")
 for key in programmming_dictionary:
     print(programmming_dictionary[key])
+
+#Print all
+print(programmming_dictionary)
+
+#Print length of dict
+print("Length of dict: ",len(programmming_dictionary))
+
+#Returns all key pari as tuples
+print(programmming_dictionary.items())
