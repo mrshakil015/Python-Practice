@@ -1,5 +1,85 @@
 # 100-Days-of-Pyhon
 <details>
+<summary><b>List & Tuple in Python</b></summary>
+
+### **Lists in Python**
+---
+A build-in data type that stores set of values. it can store elements of different types (integer, float, string, etc.).
+</details>
+
+<details>
+<summary><b>Dictionary & Set in Python</b></summary>
+
+### **Set in Python:**
+---
+Set is the collection of unordered items. Sets are mutable. But each element in the set must be unique & immutable. Set always ignore the duplicate items. Acceptable value of set:
++ boolean
++ int
++ float
++ str
++ tuple
+
+**Note:** Set doesn't support list and dict. Beacuase list and dict are mutable. Set doesn't return error for duplicate items.
+```python
+#Syntax
+mySet = {1,2,3,4,"Hello"}
+```
+```python
+#create empty set
+mySet = set()
+```
+#### **Set Methods:**
+---
++ <code>set.add(el):</code> This method used to adds an element of the set.
+  ```python
+  #Create empty set
+  mySet = set()
+
+  #Add element into the set
+  mySet.add("Python")
+  mySet.add(121)
+
+  #print set
+  print(mySet)
+  ```
++ <code>set.remove(el):</code> This method to remove a specific element.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  mySet.remove("Python")
+  print(mySet)
+  ```
++ <code>set.clear():</code> This method used to removes all elements from the set.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  mySet.clear()
+  print(mySet)
+  ```
++ <code>set.update(el):</code> This method to add multiple elements (iterable) to the set.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  mySet.update([7, 8, 9])
+  print(mySet)
+  ```
++ <code>set.pop():</code> This method used to removes a random value.
+  ```python
+  mySet = {"Python","JavaScript",99,"Java"}
+  print(mySet.pop())
+  ```
++ <code>set.union(set2):</code> This method is used to perform the combines of two or more sets. The method returns a new set containing all unique elements from the sets involved.
+  ```python
+  mySet = {"Python","JavaScript",99}
+  mySet2 = {7,8,"Java"}
+  print(mySet.union(mySet2))
+  ```
++ <code>set.intersection(set2):</code> This method is used to combines the common values of two or more sets.
+  ```python
+  mySet = {"Python","JavaScript",99}
+  mySet2 = {7,99,"Python"}
+  print(mySet.intersection(mySet2))
+  ```
+</details>
+
+<details>
   <summary><b> Python Random Module</b></summary>
 The random module in Python is a built-in module that provides various functions for generating random numbers and making random choices. It is commonly used for tasks such as generating random data, shuffling sequences, simulating random events, and more. The random module uses a pseudorandom number generator to produce random numbers.
 
@@ -93,6 +173,14 @@ The <strong>random</strong> module provides the following functions:
     random_number = random.uniform(0.5, 1.5)
     print(random_number)
     ```
+</details>
+
+<details>
+<summary><b>Important Note</b></summary>
+
++ <b>What do you mean by "Unhashable"?</b>
+  An object is considered "unhashable" in Python if it is mutable, meaning its state can be modified after creation. Unhashable objects cannot be used as keys in dictionaries or as elements in sets because these data structures require elements to have stable and unique hash values. Examples of unhashable objects include lists, dictionaries, and other mutable types.
++ 
 </details>
 
 Here are some FREE resources that can help you learn end-to-end Python :
