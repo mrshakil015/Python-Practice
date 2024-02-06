@@ -370,3 +370,27 @@ Recursion in Python refers to the process in which a function calls itself direc
 
 
 </details>
+
+<details>
+<summary><b>File I/O in Python</b></summary>
+
+Python refers to the process of reading from and writing to files on the file system. Python provides several built-in functions and methods for performing file I/O operations.
+
+#### <b>Types of all files:</b>
++ Text Files: .txt, .docx, .log etc.
++ Binary Files: .mp4, .mov, .png, .jpeg etc.
+
+### <b>File I/O Operations</b>
+---
+### <b>Open File:</b>
+To open a file in Python, we use the open() function, which takes two arguments: the file path and the mode. The mode specifies whether we want to read from ('r'), write to ('w'), or append to ('a') the file, among other options.
+```python
+#Syntax
+file = open("file_name", "mode")
+```
+
+```python
+#Example
+file = open('demo.txt', 'r')
+```
+</details>
