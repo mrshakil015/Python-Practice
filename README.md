@@ -402,8 +402,18 @@ file = open("file_name", "mode")
 ```
 
 ```python
+#Another Syntax
+with open("demo.txt", "a") as file:
+  data = file.read()
+```
+
+```python
 #Example
 file = open('demo.txt', 'r')
+data = file.read()
+#Or
+with open('demo.txt', 'r') as file:
+  data = file.read()
 ```
 
 ### <b>Reading a File:</b>
@@ -496,4 +506,58 @@ file.write("Appending some more data.\n")
 
 file.close()
 ```
+
+
+### <b>Deleting a File</b>
+---
+To delete a file in Python, we can use the os module. Module (like a code library) is a file written by another programmer that generally has a functions we can use.
+
+```python
+import os
+os.remove(filename)
+```
+### <b>Practice some question</b>
+---
+
+<b>Qs. Finding Word form the file:</b>
+
+```python
+word = "Python"
+with open("file.txt", "r") as f:
+  data = f.read()
+  if(word in data):
+    print("Found")
+  else:
+    print("Not Found")
+```
+
+<b>Qs. Replae word from file</b>
+
+```python
+with open("file.txt", "r") as f:
+  data = f.read()
+
+new_data = data.replace("Java", "Python")
+print(new_data)
+```
+
+<b>Qs. Find in which line of the file does the word "python" occur first.</b>
+
+```python
+def check_for_line():
+  word = "python"
+  data = True
+  line_no = 1
+  with open("file.txt","r") as f:
+    while data:
+      data = f.readline()
+      if(word in data):
+        print(line_no)
+        return
+      line_no +=1
+  return print("Not found")
+
+check_for_line()
+```
+
 </details>
