@@ -1,0 +1,1 @@
+To write data to a file, we need to open it in write mode ('w').This is a new line.Appending some more data.

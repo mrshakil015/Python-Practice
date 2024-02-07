@@ -46,7 +46,7 @@ fileAR = open('File Operation/demo.txt', 'a+')
 
 # Reading existing content
 print("Read and Append existing content:")
-# fileAR.seek(0)  # Move the pointer to the beginning of the file
+fileAR.seek(0)  # Move the pointer to the beginning of the file
 print(fileAR.read())
 
 # Appending data
