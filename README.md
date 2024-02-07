@@ -382,9 +382,12 @@ Python refers to the process of reading from and writing to files on the file sy
 
 #### **Character & Meaning:**
 + <code>'r' :</code> open for reading(default)
++ <code>'r+' :</code> open and writing, it overwrite the file from starting not truncating the file.
 + <code>'w' :</code> open for writing, truncating the file first
++ <code>'w+' :</code> read and overwrite file, also truncating
 + <code>'x' :</code> create a new file and open it for writing
 + <code>'a' :</code> open for writing, appending to the end of the file if it exists
++ <code>'a+' :</code> read and append file
 + <code>'b' :</code> binary mode
 + <code>'t' :</code> text mode (default)
 + <code>'+' :</code> open a disk file for updating (reading and writing)
@@ -419,7 +422,24 @@ print(line)
 lines = file.readlines()
 print(lines)
 ```
+### <b>Read & Write FIle:</b>
+The <code>'r+' </code> mode in file handling refers to opening a file for both reading and writing without truncating the file. When you open a file in <code> 'r+' </code> mode, the file must exist; otherwise, Python will raise a FileNotFoundError.
 
+```python
+file = open('example.txt', 'r+')
+
+# Reading data
+print("Reading data:")
+print(file.read())
+
+# Moving the file pointer
+file.seek(0)  # Move the pointer to the beginning of the file
+
+# Writing data
+file.write("Appending some more data.\n")
+
+file.close()
+```
 ### <b>Writing a File:</b>
 To write data to a file, we need to open it in write mode ('w'). we can then use the write() method to write data to the file. When we write a file that time it overwrites the entire file. That means it remove the all previous text then write/add new text.
 
@@ -434,8 +454,24 @@ file.write("This is a test.\n")
 # Close the file
 file.close()
 ```
+### <b>Read & Write File:</b>
+The 'w+' mode in file handling refers to opening a file for both reading and writing. When you open a file in 'w+' mode, the file is created if it doesn't exist, or if it already exists, its contents are overwritten.
 
-### <b>Appending to a File</b>
+```python
+file = open('example.txt', 'w+')
+
+# Writing data
+file.write("Writing some data.\n")
+
+# Reading data
+file.seek(0)  # Move the pointer to the beginning of the file
+print("Reading data:")
+print(file.read())
+
+file.close()
+```
+
+### <b>Appending to a File:</b>
 To append data to an existing file, we open it in append mode ('a'). We can then use the write() method as with write mode. When we append data, that data add at the end of the file.
 
 ```python
@@ -444,4 +480,20 @@ file.write("This is append method.")
 file.close()
 ```
 
+### <b>Read and Append File:</b>
+The 'a+' mode in file handling refers to opening a file for both reading and appending. When we open a file in 'a+' mode, the file's pointer is initially positioned at the end of the file, so any write operations will append data to the end of the file. 
+
+```python
+file = open('File Operation/demo.txt', 'a+')
+
+# Reading existing content
+print("Reading existing content:")
+file.seek(0)  # Move the pointer to the beginning of the file
+print(file.read())
+
+# Appending data
+file.write("Appending some more data.\n")
+
+file.close()
+```
 </details>
