@@ -418,6 +418,30 @@ print(line)
 # Read all lines into a list
 lines = file.readlines()
 print(lines)
-
 ```
+
+### <b>Writing a File:</b>
+To write data to a file, we need to open it in write mode ('w'). we can then use the write() method to write data to the file. When we write a file that time it overwrites the entire file. That means it remove the all previous text then write/add new text.
+
+```python
+# Open a file for writing
+file = open('example.txt', 'w')
+
+# Write data to the file
+file.write("Hello, world!\n")
+file.write("This is a test.\n")
+
+# Close the file
+file.close()
+```
+
+### <b>Appending to a File</b>
+To append data to an existing file, we open it in append mode ('a'). We can then use the write() method as with write mode. When we append data, that data add at the end of the file.
+
+```python
+file = open("example.txt","a")
+file.write("This is append method.")
+file.close()
+```
+
 </details>
