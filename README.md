@@ -380,9 +380,18 @@ Python refers to the process of reading from and writing to files on the file sy
 + Text Files: .txt, .docx, .log etc.
 + Binary Files: .mp4, .mov, .png, .jpeg etc.
 
+#### **Character & Meaning:**
++ <code>'r' :</code> open for reading(default)
++ <code>'w' :</code> open for writing, truncating the file first
++ <code>'x' :</code> create a new file and open it for writing
++ <code>'a' :</code> open for writing, appending to the end of the file if it exists
++ <code>'b' :</code> binary mode
++ <code>'t' :</code> text mode (default)
++ <code>'+' :</code> open a disk file for updating (reading and writing)
+
 ### <b>File I/O Operations</b>
 ---
-### <b>Open File:</b>
+### <b>Opening a File:</b>
 To open a file in Python, we use the open() function, which takes two arguments: the file path and the mode. The mode specifies whether we want to read from ('r'), write to ('w'), or append to ('a') the file, among other options.
 ```python
 #Syntax
@@ -392,5 +401,23 @@ file = open("file_name", "mode")
 ```python
 #Example
 file = open('demo.txt', 'r')
+```
+
+### <b>Reading a File:</b>
+Once the file is opened, you can read its contents using methods like <code>read(), readline(), or readlines().</code>
+
+```python
+# Read the entire contents of the file
+content = file.read()
+print(content)
+
+# Read one line at a time
+line = file.readline()
+print(line)
+
+# Read all lines into a list
+lines = file.readlines()
+print(lines)
+
 ```
 </details>
