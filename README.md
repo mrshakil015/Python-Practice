@@ -561,3 +561,23 @@ check_for_line()
 ```
 
 </details>
+
+<details>
+<summary><b>OOP in Python</b></summary>
+Object-oriented programming (OOP) in Python is a programming paradigm that revolves around the concept of "objects," which can contain data (attributes) and code (methods). Python supports OOP principles such as encapsulation, inheritance, and polymorphism.
+
+### **Class & Object in Python**
+---
+Class is a blueprint for creating objects.
+
+```python
+#create class
+class Student:
+  name = "Mr. Rahim"
+
+#creating object(instance)
+s1 = Student()
+print(s1.name)
+```
+
+</details>
